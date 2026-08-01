@@ -7,4 +7,4 @@ urllib3==1.26.6
 beautifulsoup4==4.10.0
 lxml==5.2.2
 Werkzeug==2.2.2
-setuptools
+setuptools==75.6.0
