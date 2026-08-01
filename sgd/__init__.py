@@ -6,6 +6,7 @@ from sgd.gdrive import GoogleDrive
 app = Flask(__name__)
 tokenFromVar=os.environ.get('TOKEN')
 token = json.loads(tokenFromVar)
-gdrive = GoogleDrive(token)
+folder_id = os.environ.get('GDRIVE_FOLDER_ID') or None
+gdrive = GoogleDrive(token, folder_id=folder_id)
 
 from sgd import routes
