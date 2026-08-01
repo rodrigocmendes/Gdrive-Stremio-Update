@@ -1,5 +1,4 @@
 import lxml
-import cchardet
 import sgd.utils as ut
 from bs4 import BeautifulSoup
 from sgd.cache import Json
